@@ -18,6 +18,9 @@ jobs:
     concurrency:
       group: limit-concurrency-do-not-remove-this
       cancel-in-progress: false
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
       - name: OpenTofu CD              
         uses: GlueOps/github-actions-opentofu-continuous-delivery@main
