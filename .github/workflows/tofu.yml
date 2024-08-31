@@ -1,8 +1,10 @@
 
 
 env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   OPENTOFU_VERSION: ${{ vars.OPENTOFU_VERSION }}
   TERRAFORM_ACTIONS_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  OPSGENIE_API_KEY: ${{ secrets.OPSGENIE_API_KEY }}
 
 name: OpenTofu CD
 
@@ -16,6 +18,21 @@ jobs:
     concurrency:
       group: limit-concurrency-do-not-remove-this
       cancel-in-progress: false
+    permissions:
+      actions: write
+      attestations: write
+      checks: write
+      contents: write
+      deployments: write
+      id-token: write
+      issues: write
+      discussions: write
+      packages: write
+      pages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
     steps:
       - name: OpenTofu CD              
         uses: GlueOps/github-actions-opentofu-continuous-delivery@main
