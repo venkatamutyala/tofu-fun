@@ -1,17 +1,11 @@
 terraform {
   required_providers {
-    hashicorp = {
-      source = "hashicorp/random"
+    random = {
+      source  = "hashicorp/random"
+      version = "3.6.2"
     }
   }
 }
-
-
-
-provider "hashicorp" {
-  # Configuration options
-}
-
 
 
 resource "random_bytes" "jwt_secret" {
