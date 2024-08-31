@@ -2,7 +2,6 @@ terraform {
   required_providers {
     hashicorp = {
       source  = "hashicorp/random"
-      version = "v3.6.2"
     }
   }
 }
