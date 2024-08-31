@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     hashicorp = {
-      source  = "hashicorp/random"
+      source = "hashicorp/random"
     }
   }
 }
