@@ -35,7 +35,7 @@ jobs:
       statuses: write
     steps:
       - name: OpenTofu CD              
-        uses: GlueOps/github-actions-opentofu-continuous-delivery@main
+        uses: GlueOps/github-actions-opentofu-continuous-delivery@feat/adding-environment-name-for-tf-apply
         with:
           backend_config: |
             access_key=${{ vars.TF_S3_BACKEND_AWS_ACCESS_KEY }}
