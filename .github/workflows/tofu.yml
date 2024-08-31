@@ -1,8 +1,10 @@
 
 
 env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   OPENTOFU_VERSION: ${{ vars.OPENTOFU_VERSION }}
   TERRAFORM_ACTIONS_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  OPSGENIE_API_KEY: ${{ secrets.OPSGENIE_API_KEY }}
 
 name: OpenTofu CD
 
