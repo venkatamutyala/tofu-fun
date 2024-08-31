@@ -19,7 +19,6 @@ jobs:
       group: limit-concurrency-do-not-remove-this
       cancel-in-progress: false
     permissions:
-    permissions:
       actions: write
       attestations: write
       checks: write
